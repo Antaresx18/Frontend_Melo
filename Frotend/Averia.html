@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios disponibles</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/Citas.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-left">
+                <img src="../Images/LOGO.png" alt="Logo" style="max-height: 120px;">
+            </div>
+            <div class="header-center">
+                <h1 class="font-weight-bold">REPUESTOS MELO</h1>
+                <p class="text-muted">Norte Santandereanos</p>
+            </div>
+            <div class="header-right">
+                <a href="../Frotend/BienvenidoCliente.html">
+                    <img src="../Images/pagina-de-inicio.png" alt="Salir" class="img-fluid">
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="appointment-section">
+        <div class="calendar-container">
+            <h2>Selecciona el día disponible y hora</h2>
+            <div class="calendar-navigation">
+                <button id="prev-month" class="btn btn-secondary">Anterior</button>
+                <h3 id="current-month-year"></h3>
+                <button id="next-month" class="btn btn-secondary">Siguiente</button>
+            </div>
+            <div class="calendar">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>LUN</th>
+                            <th>MAR</th>
+                            <th>MIÉ</th>
+                            <th>JUE</th>
+                            <th>VIE</th>
+                            <th>SÁB</th>
+                            <th>DOM</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Las celdas se generarán dinámicamente con JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="hours-container">
+            <h3>Horas Disponibles</h3>
+            <div id="time-slots">
+                <!-- Los horarios se generarán dinámicamente con JavaScript -->
+            </div>
+            <div class="buttons">
+            <button id="reserve-btn" class="btn btn-primary" href="../Frotend/Agendarcita.html" disabled>Reservar Cita</button>
+            <button id="clear-reservations-btn" class="btn btn-danger" style="margin-top: 15px;">Limpiar Todas las Reservas</button>
+        </div>    
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <p>©2023 Minegocio Colombiano. All Rights Reserved. | <a href="https://minegociocolombiano.co/" target="_blank" style="color: white;">https://minegociocolombiano.co/</a></p>
+            <p>Con manos Norte Santandereanas...</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/Citas.js"></script>
+</body>
+</html>
